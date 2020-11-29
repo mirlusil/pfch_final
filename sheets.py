@@ -6,7 +6,9 @@ import pygsheets
 # make sure to do this before running other things, will create new json file with credentials
 gc = pygsheets.authorize()
 
-file = gc.open_by_key('1kUlCNK00PqGfPGBgtht-FLcdQEhfBnOp9u-82VC-ix0')
+passwords = json.load(open('passwords.json'))
+
+file = gc.open_by_key(passwords['sheet_key'])
 sheet = file.worksheet('index', 0)
 
 # open json data file
