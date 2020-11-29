@@ -44,7 +44,7 @@ for file in glob.glob('data/*.json'):
             background = None
 
             #creating list that matches Knightlab specs
-            clean_object = [year, month, day, time, end_year, end_month, end_day, end_time, display_date, headline, text, media, media_credit, media_caption, media_thumbnail, type, group, background]
+            clean_object = [year, month, day, time, end_year, end_month, end_day, end_time, display_date, headline, text, f"https://{media}", media_credit, media_caption, f"https://{media_thumbnail}", type, group, background]
 
             #update python dictionary
             clean_data.update({id:clean_object})

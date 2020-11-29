@@ -128,6 +128,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-#specific to project
+# specific to project
 passwords.json
 data/*
+*.gsheet
+client_secret.json
+sheets.googleapis.com-python.json
